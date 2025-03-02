@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lotus</title>
+  <link rel="stylesheet" href="../fonts/fonts.css" />
+  <link rel="stylesheet" href="../styles/global.css" />
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+<body>
+  <header class="header" id="header">
+    <a href="../html/main.html"><img class="header__logo logo" src="../images/Logo.svg"></a>
+    <nav class="header__menu">
+      <ul class="header__menu-list">
+        <li class="header__menu-list-item">
+          <a href="./about.html" class="header__menu-list-link">О нас</a>
+        </li>
+        <li class="header__menu-list-item">
+          <a href="./menu.html" class="header__menu-list-link">Меню</a>
+        </li>
+        <li class="header__menu-list-item">
+          <a href="./contacts.html" class="header__menu-list-link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <a href="./contacts.html" class="header__reserved-button reserved-button">Резерв стола</a>
+  </header>
+  <section class="hero">
+    <div class="hero__info">
+      <h1 class="hero__info-title">Lotus</h1>
+      <p class="hero__info-description">Вкус, достойный императора, в самом сердце Северной столицы</p>
+      <a href="./menu.html" class="hero__info-card-link">
+        <div class="hero__info-card">
+          <img class="hero__info-card-img" src="../images/card-image.png">
+          <div class="hero__info-card-text">
+            <h2 class="hero__info-card-title">Новинки в нашем меню</h2>
+            <div class="hero__info-card-button info-card-button">
+              <p class="hero__info-card-button-description info-card-button-description">Подробнее</p>
+              <img class="arrow" src="../images/arrow.svg">
+            </div>
+          </div> 
+          <img class="hero__info-card-button-lotus" src="../images/lotus.svg">      
+        </div>
+      </a>
+    </div>
+    <img class="hero_image" src="../images/Left_site.png">
+  </section>
+  <section class="about">
+    <h2 class="about__title">О нас</h2>
+    <div class="about__info">
+      <div class="about__description">
+        <p class="about__description-text">В самом сердце Санкт-Петербурга мы создали уникальное пространство высокой азиатской кухни. Наш ресторан бережно хранит древние кулинарные традиции императорских дворов, искусно соединяя их с современными тенденциями.</p>
+        <p class="about__description-text">Каждое блюдо в нашем меню создано по старинным рецептам, которые веками оставались достоянием императорских семей. Наши повара, обученные признанными мастерами азиатской кухни, виртуозно воплощают эти рецепты, используя только премиальные ингредиенты.</p>
+      </div>
+      <img class="about__image" src="../images/interer.png">
+    </div>
+    <a href="./about.html" class="details-button-link">
+      <div class="details-button">Подробнее</div>
+    </a>
+  </section>
+  <section class="menu">
+    <img class="menu__image" src="../images/veer.svg">
+    <div class="menu__cards">
+      <article class="menu__card">
+        <img class="menu__cards-img" src="../images/menu.png">
+        <a href="menu" class="menu__cards-button">Меню</a>
+      </article>
+      <article class="menu__card">
+        <a class="menu__cards-button">Бар и Вино</a>
+        <img class="menu__cards-img" src="../images/vine.png">
+      </article>
+      <article class="menu__card">
+        <img class="menu__cards-img" src="../images/breakfast.png">
+        <a class="menu__cards-button">Завтраки</a>
+      </article>
+    </div>
+    <img class="menu__image" src="../images/veer-2.svg">
+  </section>
+  <section class="contacts" style="display: block;">
+    <h2 class="contacts__title">Контакты</h2>
+    <iframe class="map-widget" src="https://yandex.ru/map-widget/v1/?um=constructor%3A7536221384777f6bbd022ec9962297dd9f7d6343337c48e3b1d0f9e574ff7b80&amp;source=constructor" width="100%" height="466" frameborder="0"></iframe>
+    <div class="contacts__info">
+      <div class="contacts__left-column">
+        <img class="contacts__logo logo" src="../images/Logo.svg">
+        <p class="contacts__address">Садовая ул., 28-30</p>
+        <a href="./contacts.html" class="contacts__reserved-button reserved-button">Резерв стола</a>
+      </div>  
+      <dl class="contacts__time-list">
+        <dt class="contacts__time-list-title">Основной сервис:</dt>
+        <dd class="contacts__time-list-description">
+          <p class="contacts__time-list-description-text">ПН 12:00 — 22:00</p>
+          <p class="contacts__time-list-description-text">ВТ-ЧТ 12:00 — 23:00</p>
+          <p class="contacts__time-list-description-text">ПТ-СБ 12:00 — 00:00</p>
+          <p class="contacts__time-list-description-text">ВС 12:00 — 23:00</p>
+        </dd>
+      </dl>
+      <dl class="contacts__time-list">
+        <dt class="contacts__time-list-title">Завтраки:</dt>
+        <dd class="contacts__time-list-description">
+          <p class="contacts__time-list-description-text">ПН-ПТ 08:00 — 11:30</p>
+          <p class="contacts__time-list-description-text">СБ-ВС 09:00 — 13:30</p>
+        </dd>
+      </dl>
+      <address class="contacts__call">
+        <a class="contacts__call-link" href="tel:+79232756633">+7(923)275-66-33</a>
+        <a class="contacts__call-link" href="mailto:info@lotus.rest">info@lotus.rest</a>
+      </address>
+    </div>
+    </section>
+  <footer class="footer">
+    <a href="#header"><img class="contacts__logo logo" src="../images/Logo.svg"></a>
+    <p class="footer__year">2025</p>
+  </footer>
+</body>
+</html>
