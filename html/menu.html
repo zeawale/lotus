@@ -1,33 +1,496 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lotus</title>
-  <link rel="stylesheet" href="../fonts/fonts.css" />
-  <link rel="stylesheet" href="../styles/global.css" />
-  <link rel="stylesheet" href="../styles/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotus</title>
+
+    <link rel="stylesheet" href="../fonts/fonts.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
 </head>
 <body>
-  <header class="header" id="header">
+<header class="header" id="header">
     <a href="./main.html"><img class="header__logo logo" src="../images/Logo.svg"></a>
     <nav class="header__menu">
-      <ul class="header__menu-list">
-        <li class="header__menu-list-item">
-          <a href="./about.html" class="header__menu-list-link">О нас</a>
-        </li>
-        <li class="header__menu-list-item">
-          <a href="./menu.html" class="header__menu-list-link header__menu-list-link-active">Меню</a>
-        </li>
-        <li class="header__menu-list-item">
-          <a href="./contacts.html" class="header__menu-list-link">Контакты</a>
-        </li>
-      </ul>
+        <ul class="header__menu-list">
+            <li class="header__menu-list-item">
+                <a href="./about.html" class="header__menu-list-link">О нас</a>
+            </li>
+            <li class="header__menu-list-item">
+                <a href="./menu.html" class="header__menu-list-link header__menu-list-link-active">Меню</a>
+            </li>
+            <li class="header__menu-list-item">
+                <a href="./contacts.html" class="header__menu-list-link">Контакты</a>
+            </li>
+        </ul>
     </nav>
     <a href="./contacts.html" class="header__reserved-button reserved-button">Резерв стола</a>
-  </header>
-  <footer class="footer">
-    <a href="#header"><img class="contacts__logo logo" src="../images/Logo.svg"></a>
-    <p class="footer__year">2025</p>
-  </footer>
+    </header>
+    <section class="tabs">
+        <button href="" class="tab active" data-tab="main-menu">Основное меню</button>
+        <button href="" class="tab" data-tab="breakfast">Завтрак</button>
+        <button href="" class="tab" data-tab="bar">Бар и вино</button>
+    </section>
+    <section class="menu">
+        <div id="main-menu" class="menu__table active">
+        <table class="content"> 
+            <tr class="menu__table-row">
+                <td class="menu__table-el">
+                    <div class="menu__card">
+                        <img src="../images/menu/main/Rectangle 20.png" class="menu__card-img">
+                        <h3 class="menu__card-title">Суши-сет "Классик"</h3>
+                        <p class="menu__card-cost">950 руб</p>
+                        <table class="pcf-table">
+                            <tr class="pcf-table__titles">
+                                <td class="pcf-table__title">Ккал на 100г</td>
+                                <td class="pcf-table__title">Углеводы</td>
+                                <td class="pcf-table__title">Белки</td>
+                                <td class="pcf-table__title">Жиры</td>
+                            </tr>
+                            <tr class="pcf-table__values">
+                                <td class="pcf-table__value">245</td>
+                                <td class="pcf-table__value">32г</td>
+                                <td class="pcf-table__value">14г</td>
+                                <td class="pcf-table__value">8г</td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td class="menu__table-el">
+                    <div class="menu__card">
+                        <img src="../images/menu/main/Rectangle 20-1.png" class="menu__card-img">
+                        <h3 class="menu__card-title">Сет "Император"</h3>
+                        <p class="menu__card-cost">2200 руб</p>
+                        <table class="pcf-table">
+                            <tr class="pcf-table__titles">
+                                <td class="pcf-table__title">Ккал на 100г</td>
+                                <td class="pcf-table__title">Углеводы</td>
+                                <td class="pcf-table__title">Белки</td>
+                                <td class="pcf-table__title">Жиры</td>
+                            </tr>
+                            <tr class="pcf-table__values">
+                                <td class="pcf-table__value">275</td>
+                                <td class="pcf-table__value">28г</td>
+                                <td class="pcf-table__value">16г</td>
+                                <td class="pcf-table__value">12г</td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr class="menu__table-row">
+                <td class="menu__table-el">
+                    <div class="menu__card">
+                        <img src="../images/menu/main/Rectangle 20-2.png" class="menu__card-img">
+                        <h3 class="menu__card-title">Эби  в темпуре</h3>
+                        <p class="menu__card-cost">750 руб</p>
+                        <table class="pcf-table">
+                            <tr class="pcf-table__titles">
+                                <td class="pcf-table__title">Ккал на 100г</td>
+                                <td class="pcf-table__title">Углеводы</td>
+                                <td class="pcf-table__title">Белки</td>
+                                <td class="pcf-table__title">Жиры</td>
+                            </tr>
+                            <tr class="pcf-table__values">
+                                <td class="pcf-table__value">320</td>
+                                <td class="pcf-table__value">28г</td>
+                                <td class="pcf-table__value">18г</td>
+                                <td class="pcf-table__value">16г</td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td class="menu__table-el">
+                    <div class="menu__card">
+                        <img src="../images/menu/main/Rectangle 20-3.png" class="menu__card-img">
+                        <h3 class="menu__card-title">Сет "Уми"</h3>
+                        <p class="menu__card-cost">720 руб</p>
+                        <table class="pcf-table">
+                            <tr class="pcf-table__titles">
+                                <td class="pcf-table__title">Ккал на 100г</td>
+                                <td class="pcf-table__title">Углеводы</td>
+                                <td class="pcf-table__title">Белки</td>
+                                <td class="pcf-table__title">Жиры</td>
+                            </tr>
+                            <tr class="pcf-table__values">
+                                <td class="pcf-table__value">260</td>
+                                <td class="pcf-table__value">30г</td>
+                                <td class="pcf-table__value">15г</td>
+                                <td class="pcf-table__value">9г</td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr class="menu__table-row">
+                <td class="menu__table-el">
+                    <div class="menu__card">
+                        <img src="../images/menu/main/Rectangle 20-4.png" class="menu__card-img">
+                        <h3 class="menu__card-title">Сет "Магуро"</h3>
+                        <p class="menu__card-cost">1250 руб</p>
+                        <table class="pcf-table">
+                            <tr class="pcf-table__titles">
+                                <td class="pcf-table__title">Ккал на 100г</td>
+                                <td class="pcf-table__title">Углеводы</td>
+                                <td class="pcf-table__title">Белки</td>
+                                <td class="pcf-table__title">Жиры</td>
+                            </tr>
+                            <tr class="pcf-table__values">
+                                <td class="pcf-table__value">285</td>
+                                <td class="pcf-table__value">25г</td>
+                                <td class="pcf-table__value">18г</td>
+                                <td class="pcf-table__value">13г</td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td class="menu__table-el">
+                    <div class="menu__card">
+                        <img src="../images/menu/main/Rectangle 20-5.png" class="menu__card-img">
+                        <h3 class="menu__card-title">Яки Соба</h3>
+                        <p class="menu__card-cost">680 руб</p>
+                        <table class="pcf-table">
+                            <tr class="pcf-table__titles">
+                                <td class="pcf-table__title">Ккал на 100г</td>
+                                <td class="pcf-table__title">Углеводы</td>
+                                <td class="pcf-table__title">Белки</td>
+                                <td class="pcf-table__title">Жиры</td>
+                            </tr>
+                            <tr class="pcf-table__values">
+                                <td class="pcf-table__value">390</td>
+                                <td class="pcf-table__value">65г</td>
+                                <td class="pcf-table__value">8г</td>
+                                <td class="pcf-table__value">10г</td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr class="menu__table-row">
+                <td class="menu__table-el">
+                    <div class="menu__card">
+                        <img src="../images/menu/main/Rectangle 20-6.png" class="menu__card-img">
+                        <h3 class="menu__card-title">Сет "Моритаваса"</h3>
+                        <p class="menu__card-cost">3650 руб</p>
+                        <table class="pcf-table">
+                            <tr class="pcf-table__titles">
+                                <td class="pcf-table__title">Ккал на 100г</td>
+                                <td class="pcf-table__title">Углеводы</td>
+                                <td class="pcf-table__title">Белки</td>
+                                <td class="pcf-table__title">Жиры</td>
+                            </tr>
+                            <tr class="pcf-table__values">
+                                <td class="pcf-table__value">270</td>
+                                <td class="pcf-table__value">29г</td>
+                                <td class="pcf-table__value">17г</td>
+                                <td class="pcf-table__value">11г</td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td class="menu__table-el">
+                    <div class="menu__card">
+                        <img src="../images/menu/main/Rectangle 20-7.png" class="menu__card-img">
+                        <h3 class="menu__card-title">Сет "Кайсэн"</h3>
+                        <p class="menu__card-cost">950 руб</p>
+                        <table class="pcf-table">
+                            <tr class="pcf-table__titles">
+                                <td class="pcf-table__title">Ккал на 100г</td>
+                                <td class="pcf-table__title">Углеводы</td>
+                                <td class="pcf-table__title">Белки</td>
+                                <td class="pcf-table__title">Жиры</td>
+                            </tr>
+                            <tr class="pcf-table__values">
+                                <td class="pcf-table__value">230</td>
+                                <td class="pcf-table__value">24г</td>
+                                <td class="pcf-table__value">19г</td>
+                                <td class="pcf-table__value">7г</td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        </div>
+        <div id="breakfast"  class="menu__table">
+        <table class="content"> 
+            <tr class="menu__table-row">
+                <td class="menu__table-el">
+                    <div class="menu__card">
+                        <img src="../images/menu/breakfast/Rectangle 20-8.png" class="menu__card-img">
+                        <h3 class="menu__card-title">Тамаго с беконом</h3>
+                        <p class="menu__card-cost">460 руб</p>
+                        <table class="pcf-table">
+                            <tr class="pcf-table__titles">
+                                <td class="pcf-table__title">Ккал на 100г</td>
+                                <td class="pcf-table__title">Углеводы</td>
+                                <td class="pcf-table__title">Белки</td>
+                                <td class="pcf-table__title">Жиры</td>
+                            </tr>
+                            <tr class="pcf-table__values">
+                                <td class="pcf-table__value">315</td>
+                                <td class="pcf-table__value">5г</td>
+                                <td class="pcf-table__value">15г</td>
+                                <td class="pcf-table__value">24г</td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td class="menu__table-el">
+                    <div class="menu__card">
+                        <img src="../images/menu/breakfast/Rectangle 20-9.png" class="menu__card-img">
+                        <h3 class="menu__card-title">Дораяки</h3>
+                        <p class="menu__card-cost">720 руб</p>
+                        <table class="pcf-table">
+                            <tr class="pcf-table__titles">
+                                <td class="pcf-table__title">Ккал на 100г</td>
+                                <td class="pcf-table__title">Углеводы</td>
+                                <td class="pcf-table__title">Белки</td>
+                                <td class="pcf-table__title">Жиры</td>
+                            </tr>
+                            <tr class="pcf-table__values">
+                                <td class="pcf-table__value">285</td>
+                                <td class="pcf-table__value">42г</td>
+                                <td class="pcf-table__value">8г</td>
+                                <td class="pcf-table__value">12г</td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr class="menu__table-row">
+                <td class="menu__table-el">
+                    <div class="menu__card">
+                        <img src="../images/menu/breakfast/Rectangle 20-10.png" class="menu__card-img">
+                        <h3 class="menu__card-title">Маки с бобовой начинкой</h3>
+                        <p class="menu__card-cost">510 руб</p>
+                        <table class="pcf-table">
+                            <tr class="pcf-table__titles">
+                                <td class="pcf-table__title">Ккал на 100г</td>
+                                <td class="pcf-table__title">Углеводы</td>
+                                <td class="pcf-table__title">Белки</td>
+                                <td class="pcf-table__title">Жиры</td>
+                            </tr>
+                            <tr class="pcf-table__values">
+                                <td class="pcf-table__value">290</td>
+                                <td class="pcf-table__value">32г</td>
+                                <td class="pcf-table__value">14г</td>
+                                <td class="pcf-table__value">15г</td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td class="menu__table-el">
+                    <div class="menu__card">
+                        <img src="../images/menu/breakfast/Rectangle 20-11.png" class="menu__card-img">
+                        <h3 class="menu__card-title">Тамаго с вялеными томатами</h3>
+                        <p class="menu__card-cost">440 руб</p>
+                        <table class="pcf-table">
+                            <tr class="pcf-table__titles">
+                                <td class="pcf-table__title">Ккал на 100г</td>
+                                <td class="pcf-table__title">Углеводы</td>
+                                <td class="pcf-table__title">Белки</td>
+                                <td class="pcf-table__title">Жиры</td>
+                            </tr>
+                            <tr class="pcf-table__values">
+                                <td class="pcf-table__value">275</td>
+                                <td class="pcf-table__value">8г</td>
+                                <td class="pcf-table__value">16г</td>
+                                <td class="pcf-table__value">20г</td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr class="menu__table-row">
+                <td class="menu__table-el">
+                    <div class="menu__card">
+                        <img src="../images/menu/breakfast/Rectangle 20-12.png" class="menu__card-img">
+                        <h3 class="menu__card-title">Окономияки</h3>
+                        <p class="menu__card-cost">560 руб</p>
+                        <table class="pcf-table">
+                            <tr class="pcf-table__titles">
+                                <td class="pcf-table__title">Ккал на 100г</td>
+                                <td class="pcf-table__title">Углеводы</td>
+                                <td class="pcf-table__title">Белки</td>
+                                <td class="pcf-table__title">Жиры</td>
+                            </tr>
+                            <tr class="pcf-table__values">
+                                <td class="pcf-table__value">265</td>
+                                <td class="pcf-table__value">12г</td>
+                                <td class="pcf-table__value">14г</td>
+                                <td class="pcf-table__value">18г</td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td class="menu__table-el">
+                    <div class="menu__card">
+                        <img src="../images/menu/breakfast/Rectangle 20-13.png" class="menu__card-img">
+                        <h3 class="menu__card-title">Тейшоку из 2 блюд и напитка</h3>
+                        <p class="menu__card-cost">930 руб</p>
+                        <table class="pcf-table">
+                            <tr class="pcf-table__titles">
+                                <td class="pcf-table__title">Ккал на 100г</td>
+                                <td class="pcf-table__title">Углеводы</td>
+                                <td class="pcf-table__title">Белки</td>
+                                <td class="pcf-table__title">Жиры</td>
+                            </tr>
+                            <tr class="pcf-table__values">
+                                <td class="pcf-table__value">350</td>
+                                <td class="pcf-table__value">25г</td>
+                                <td class="pcf-table__value">18г</td>
+                                <td class="pcf-table__value">22г</td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            
+        </table>
+    </div>
+    <div id="bar" class="menu__table">
+        <table class="content"> 
+            <tr class="menu__table-row">
+                <td class="menu__table-el">
+                    <div class="menu__card">
+                        <img src="../images/menu/bar/Rectangle 20-14.png" class="menu__card-img">
+                        <h3 class="menu__card-title">Сакэ Джунмай</h3>
+                        <p class="menu__card-cost">400 руб</p>
+                        <table class="pcf-table">
+                            <tr class="pcf-table__titles">
+                                <td class="pcf-table__title">Ккал на 100г</td>
+                                <td class="pcf-table__title">Углеводы</td>
+                                <td class="pcf-table__title">Белки</td>
+                                <td class="pcf-table__title">Жиры</td>
+                            </tr>
+                            <tr class="pcf-table__values">
+                                <td class="pcf-table__value">95</td>
+                                <td class="pcf-table__value">3г</td>
+                                <td class="pcf-table__value">0г</td>
+                                <td class="pcf-table__value">0г</td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td class="menu__table-el">
+                    <div class="menu__card">
+                        <img src="../images/menu/bar/Rectangle 20-15.png" class="menu__card-img">
+                        <h3 class="menu__card-title">Хоппии</h3>
+                        <p class="menu__card-cost">450 руб</p>
+                        <table class="pcf-table">
+                            <tr class="pcf-table__titles">
+                                <td class="pcf-table__title">Ккал на 100г</td>
+                                <td class="pcf-table__title">Углеводы</td>
+                                <td class="pcf-table__title">Белки</td>
+                                <td class="pcf-table__title">Жиры</td>
+                            </tr>
+                            <tr class="pcf-table__values">
+                                <td class="pcf-table__value">85</td>
+                                <td class="pcf-table__value">4г</td>
+                                <td class="pcf-table__value">0г</td>
+                                <td class="pcf-table__value">0г</td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr class="menu__table-row">
+                <td class="menu__table-el">
+                    <div class="menu__card">
+                        <img src="../images/menu/bar/Rectangle 20-16.png" class="menu__card-img">
+                        <h3 class="menu__card-title">Вино игристое</h3>
+                        <p class="menu__card-cost">550 руб</p>
+                        <table class="pcf-table">
+                            <tr class="pcf-table__titles">
+                                <td class="pcf-table__title">Ккал на 100г</td>
+                                <td class="pcf-table__title">Углеводы</td>
+                                <td class="pcf-table__title">Белки</td>
+                                <td class="pcf-table__title">Жиры</td>
+                            </tr>
+                            <tr class="pcf-table__values">
+                                <td class="pcf-table__value">78</td>
+                                <td class="pcf-table__value">2г</td>
+                                <td class="pcf-table__value">0г</td>
+                                <td class="pcf-table__value">0г</td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td class="menu__table-el">
+                    <div class="menu__card">
+                        <img src="../images/menu/bar/Rectangle 20-17.png" class="menu__card-img">
+                        <h3 class="menu__card-title">Апельсиновый сок</h3>
+                        <p class="menu__card-cost">230 руб</p>
+                        <table class="pcf-table">
+                            <tr class="pcf-table__titles">
+                                <td class="pcf-table__title">Ккал на 100г</td>
+                                <td class="pcf-table__title">Углеводы</td>
+                                <td class="pcf-table__title">Белки</td>
+                                <td class="pcf-table__title">Жиры</td>
+                            </tr>
+                            <tr class="pcf-table__values">
+                                <td class="pcf-table__value">45</td>
+                                <td class="pcf-table__value">1г</td>
+                                <td class="pcf-table__value">0г</td>
+                                <td class="pcf-table__value">10г</td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr class="menu__table-row">
+                <td class="menu__table-el">
+                    <div class="menu__card">
+                        <img src="../images/menu/bar/Rectangle 20-18.png" class="menu__card-img">
+                        <h3 class="menu__card-title">Юдзусю</h3>
+                        <p class="menu__card-cost">470 руб</p>
+                        <table class="pcf-table">
+                            <tr class="pcf-table__titles">
+                                <td class="pcf-table__title">Ккал на 100г</td>
+                                <td class="pcf-table__title">Углеводы</td>
+                                <td class="pcf-table__title">Белки</td>
+                                <td class="pcf-table__title">Жиры</td>
+                            </tr>
+                            <tr class="pcf-table__values">
+                                <td class="pcf-table__value">120</td>
+                                <td class="pcf-table__value">14г</td>
+                                <td class="pcf-table__value">0г</td>
+                                <td class="pcf-table__value">0г</td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td class="menu__table-el">
+                    <div class="menu__card">
+                        <img src="../images/menu/bar/Rectangle 20-19.png" class="menu__card-img">
+                        <h3 class="menu__card-title">Чху-хай арбузный</h3>
+                        <p class="menu__card-cost">890 руб</p>
+                        <table class="pcf-table">
+                            <tr class="pcf-table__titles">
+                                <td class="pcf-table__title">Ккал на 100г</td>
+                                <td class="pcf-table__title">Углеводы</td>
+                                <td class="pcf-table__title">Белки</td>
+                                <td class="pcf-table__title">Жиры</td>
+                            </tr>
+                            <tr class="pcf-table__values">
+                                <td class="pcf-table__value">245</td>
+                                <td class="pcf-table__value">0г</td>
+                                <td class="pcf-table__value">0г</td>
+                                <td class="pcf-table__value">12г</td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </section>
+    <footer class="footer">
+        <a href="#header"><img class="contacts__logo logo" src="../images/Logo.svg"></a>
+        <p class="footer__year">2025</p>
+    </footer>
+    <script src="../scripts/script.js"></script>
 </body>
+</html>
