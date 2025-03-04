@@ -583,3 +583,42 @@
   font-size: 12px;
 }
 
+.hero__info-card:hover {
+  background: linear-gradient(to bottom, rgba(217,217,217,0.50),rgba(115,115,115,0.1));
+}
+
+.reserved-button:hover { 
+  background: linear-gradient(to bottom, rgba(148,20,9,0.6),rgba(148,20,9,0.2));
+}
+
+.header__menu-list-link:hover {
+  color: #c0c0c0 ;
+}
+
+.details-button:hover {
+  background-color: rgba(255, 255, 255, 0.42);
+}
+
+.categories__cards-button:hover {
+  background: linear-gradient(to bottom, rgba(148,20,9,0.6),rgba(148,20,9,0.2));
+}
+
+.people__card:hover {
+  background-color: #c7c7c73c;
+}
+
+.call-button:hover {
+  background-color: rgba(255, 255, 255, 0.42);
+}
+
+.form__button:hover {
+  background: linear-gradient(to bottom, rgba(148, 21, 9, 0.713),rgba(148,20,9,0.4));
+}
+
+.tab:hover {
+  background-color: rgba(255, 255, 255, 0.42);
+}
+
+.tab.active:hover {
+  background: linear-gradient(to bottom, rgba(148,20,9,0.4),rgba(148,20,9,0.2));
+}
