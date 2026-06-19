@@ -8,6 +8,8 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1e1e2e?style=for-the-badge&logo=css3&logoColor=a6e3a1)
 ![JavaScript](https://img.shields.io/badge/JavaScript-1e1e2e?style=for-the-badge&logo=javascript&logoColor=a6e3a1)
 
+[![Figma](https://img.shields.io/badge/Figma_Design-1e1e2e?style=for-the-badge&logo=figma&logoColor=a6e3a1)](https://www.figma.com/design/rC3epQMFfhy3lcQOw0nZF5/)
+
 </div>
 
 ---
